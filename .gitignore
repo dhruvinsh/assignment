@@ -1,6 +1,7 @@
 __pycache__/
 shopping_code_coverage/
 .coverage
+coverage.xml
 *.pyc
 *.csv
 *.xlsx
