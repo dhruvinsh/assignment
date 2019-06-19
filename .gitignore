@@ -1,5 +1,5 @@
 __pycache__/
-shopping_html_report/
+shopping_code_coverage/
 .coverage
 *.pyc
 *.csv
