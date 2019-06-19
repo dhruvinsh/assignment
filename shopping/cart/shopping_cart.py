@@ -110,7 +110,7 @@ class Cart:
     def checkout(self):
         """Perform checkout of the cart and provide receipt for it,
         output looks like this,
-        Item: Value
+        Item: Value incl tax
         sales tax: amount round to nearest 0.05
         Total: total amount including tax
         """

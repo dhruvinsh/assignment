@@ -71,7 +71,7 @@ On purchase of collection of merchandise, receipt get generated, where item pric
 
 So to cover all, in `shopping` package there are 3 components, Tax Policy, Merchandise and Shopping Cart.
 
-Based on Input data, we can parse needed data and generate merchandise objects.
+Based on Input data, we can parse needed data and generate merchandise objects. tokenizer is there to parse the string order and help us to generate merchandise objects.
 
 Merchandise has name, price, category and imported status. Based on observed input data we have some predefined merchandise category as well. Category get assigned automatically from statically defined categories, if it not found then GENERIC category get assigned.
 
@@ -174,6 +174,47 @@ pipenv run coverage report
 There are two methods to generate the output, by default it is set to run method one. change can be applied by setting method_two() in `run.py` file.
 ``` text
 pipenv run python run.py
+```
+
+# Usage
+Input data like, `1 music CD: 16.49`, below can be done,
+
+``` python-console
+>>> from shopping import Merchandise
+>>> music_cd = Merchandise(name='music CD', price=16.49)
+>>> music_cd
+Merchandise(name='music CD', price=16.49, category='music', imported=False)
+
+>>> from shopping import Cart
+>>> my_cart = Cart()
+>>> my_cart.add_merchandise(music_cd)
+Cart(items=[CartItem(item=Merchandise(name='music CD', price=16.49, category='music', imported=False), total=18.139999999999997, tax_amount=1.65)])
+>>> my_cart.checkout()
+Qty - Items                          - Amount
+  1 - music CD                       - 18.14
+Sales Tax            - 1.65
+Total(Incl. tax)     - 18.14
+>>>
+```
+
+Other way,
+
+``` python-console
+>>> from shopping import Merchandise
+>>> music_cd = Merchandise(name='music CD', price=16.49)
+>>> music_cd
+Merchandise(name='music CD', price=16.49, category='music', imported=False)
+
+>>> from shopping import Cart
+>>> my_cart = Cart()
+>>> music_cd.add_to(my_cart)
+Merchandise(name='music CD', price=16.49, category='music', imported=False)
+>>> my_cart.checkout()
+Qty - Items                          - Amount
+  1 - music CD                       - 18.14
+Sales Tax            - 1.65
+Total(Incl. tax)     - 18.14
+>>>
 ```
 
 # Code Coverage
