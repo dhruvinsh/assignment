@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import logging
 from dataclasses import dataclass, field
 from typing import List
@@ -78,7 +80,7 @@ class Cart:
         if not isinstance(item, Merchandise):
             raise InvalidProduct(f'{item} is not a valid Merchandise')
 
-    def add_merchandise(self, items: Merchandise, qty: int = 1):
+    def add_merchandise(self, items: Merchandise, qty: int = 1) -> Cart:
         """allows to add merchandise to the cart"""
         if isinstance(items, list):
             _ = [self._validate_add_on(i) for i in items]
@@ -107,7 +109,7 @@ class Cart:
             total += item.tax_amount
         return total
 
-    def checkout(self):
+    def checkout(self) -> None:
         """Perform checkout of the cart and provide receipt for it,
         output looks like this,
         Item: Value incl tax

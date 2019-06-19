@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import logging
 from dataclasses import dataclass
 from typing import Union
@@ -55,7 +57,7 @@ class Merchandise:
             f"Merchandise {self.name}, Category not define. Set to GENERIC.")
         return 'GENERIC'
 
-    def add_to(self, cart, qty=1):
+    def add_to(self, cart, qty=1) -> Merchandise:
         """allows any merchandise add to shopping cart. it automatically creates
         intermediate CartItem and assign quantity to it and then
         finally add it to the cart.
