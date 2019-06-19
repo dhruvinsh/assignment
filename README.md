@@ -1,3 +1,6 @@
+[![codecov](https://codecov.io/gh/dhruvinsh/assignment/branch/master/graph/badge.svg)](https://codecov.io/gh/dhruvinsh/assignment)
+
+
 Note: Tested with python 3.7.3 only.
 
 
