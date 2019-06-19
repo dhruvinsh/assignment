@@ -141,8 +141,14 @@ Rounding Method 2: (correct)
 ```
 
 # Running Application
-I am using **pipenv** environment manager. Below command install needed dependency automatically.
+Get a copy of the project, make sure you have git installed and it is in path, run below command,
 
+``` text
+git clone https://github.com/dhruvinsh/assignment.git
+```
+
+
+I am using **pipenv** environment manager. Below command install needed dependency automatically.
 ### Dependency
 Run below command from command line from the project directory.
 
