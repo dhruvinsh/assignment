@@ -162,6 +162,7 @@ pipenv run coverage run -m unittest -v
 pipenv run coverage report
 ```
 ##### Run Application
+There are two methods to generate the output, by default it is set to run method one. change can be applied by setting method_two() in `run.py` file.
 ``` text
 pipenv run python run.py
 ```
