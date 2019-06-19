@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+pygments = "*"
+yapf = "*"
+jedi = "*"
+isort = "*"
+importmagic = "*"
+epc = "*"
+
+[packages]
+coverage = "*"
+
+[requires]
+python_version = "3.7"
