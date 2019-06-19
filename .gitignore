@@ -1,4 +1,6 @@
 __pycache__/
+shopping_html_report/
+.coverage
 *.pyc
 *.csv
 *.xlsx
