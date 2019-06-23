@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - '3.7.3'
+
+install:
+  - 'pip install pipenv'
+  - 'pipenv install'
+
+branches:
+  only:
+    - master
+
+script: 'coverage run -m unittest -v'
+
+after_success:
+  - 'coverage xml'
+  - 'codecov --token="codecov_token"'
