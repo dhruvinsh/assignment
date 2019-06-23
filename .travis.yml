@@ -17,5 +17,4 @@ branches:
 script: 'coverage run -m unittest -v'
 
 after_success:
-  - 'coverage xml'
-  - 'codecov --token="codecov_token"'
+  - codecov
