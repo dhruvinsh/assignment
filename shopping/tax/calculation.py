@@ -37,7 +37,7 @@ def salestax_rounding(value, string=False, nearest=0.05):
 
 @dataclass
 class SalesTaxCalculator(SalesTaxPolicy):
-    "Allows to calculate sales tax for merchandise."
+    """Allows to calculate sales tax for merchandise."""
 
     def salestax_amount(self) -> float:
         """allows to calculate sales tax on merchandise price.

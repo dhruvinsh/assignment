@@ -40,12 +40,12 @@ class CartItem:
 
     @property
     def qty(self):
-        "gets current assigned quantity"
+        """gets current assigned quantity"""
         return self._qty
 
     @qty.setter
     def qty(self, number):
-        "sets quantity for item"
+        """sets quantity for item"""
         try:
             number = int(number)
         except ValueError:
@@ -76,7 +76,7 @@ class Cart:
                 raise InvalidCartItem('Invalid cart item detect')
 
     def _validate_add_on(self, item: Merchandise):
-        "allows to test add on items are proper object or not"
+        """allows to test add on items are proper object or not"""
         if not isinstance(item, Merchandise):
             raise InvalidProduct(f'{item} is not a valid Merchandise')
 

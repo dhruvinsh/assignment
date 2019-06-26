@@ -14,7 +14,7 @@ TAX_EXEMPTION_CATEGORY = ['book', 'food', 'pharmacy']
 
 @dataclass
 class SalesTaxPolicy:
-    "This class forms a sales tax policy for given merchandise"
+    """This class forms a sales tax policy for given merchandise"""
     merchandise: Merchandise
 
     @property
