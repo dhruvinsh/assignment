@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/dhruvinsh/assignment.svg?branch=master)](https://travis-ci.org/dhruvinsh/assignment)
-[![codecov](https://codecov.io/gh/dhruvinsh/assignment/branch/master/graph/badge.svg)](https://codecov.io/gh/dhruvinsh/assignment)
+[![Build Status](https://travis-ci.org/dhruvinsh/sales_tax.svg?branch=master)](https://travis-ci.org/dhruvinsh/sales_tax)
+[![codecov](https://codecov.io/gh/dhruvinsh/sales_tax/branch/master/graph/badge.svg)](https://codecov.io/gh/dhruvinsh/sales_tax)
 
 
 Note: Tested with python 3.7.3 only.
