@@ -145,7 +145,7 @@ Rounding Method 2: (correct)
 Get a copy of the project, make sure you have git installed and it is in path, run below command,
 
 ``` text
-git clone https://github.com/dhruvinsh/assignment.git
+git clone https://github.com/dhruvinsh/sales_tax.git
 ```
 
 
@@ -224,20 +224,15 @@ Name                               Stmts   Miss  Cover
 ------------------------------------------------------
 shopping\__init__.py                  10      0   100%
 shopping\cart\__init__.py              2      0   100%
-shopping\cart\shopping_cart.py        72      0   100%
+shopping\cart\shopping_cart.py        73      0   100%
 shopping\exceptions.py                 5      0   100%
 shopping\merchandise\__init__.py       3      0   100%
 shopping\merchandise\category.py       1      0   100%
-shopping\merchandise\products.py      36      0   100%
+shopping\merchandise\products.py      37      0   100%
 shopping\tax\__init__.py               3      0   100%
 shopping\tax\calculation.py           16      0   100%
 shopping\tax\policy.py                17      0   100%
 shopping\tokenizer.py                 16      0   100%
-test\__init__.py                       0      0   100%
-test\test_cart.py                     84      0   100%
-test\test_merchandise.py              29      0   100%
-test\test_tax.py                      43      0   100%
-test\test_tokenizer.py                24      0   100%
 ------------------------------------------------------
-TOTAL                                361      0   100%
+TOTAL                                183      0   100%
 ```
