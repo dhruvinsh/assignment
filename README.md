@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/dhruvinshah0401/1ded5b4e-98c1-46ca-bcf4-87927f69c59d/30c742b0-67e2-4421-a6c7-d0b984d5aeca/_apis/work/boardbadge/cd25a9bc-fa47-4f41-90f6-f4d9d2ee1533)](https://dev.azure.com/dhruvinshah0401/1ded5b4e-98c1-46ca-bcf4-87927f69c59d/_boards/board/t/30c742b0-67e2-4421-a6c7-d0b984d5aeca/Microsoft.RequirementCategory)
 [![Build Status](https://travis-ci.org/dhruvinsh/sales_tax.svg?branch=master)](https://travis-ci.org/dhruvinsh/sales_tax)
 [![codecov](https://codecov.io/gh/dhruvinsh/sales_tax/branch/master/graph/badge.svg)](https://codecov.io/gh/dhruvinsh/sales_tax)
 
